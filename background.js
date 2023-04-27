@@ -101,7 +101,7 @@ importScripts('update.js');
 
 chrome.runtime.onInstalled.addListener(function(details) {
   if (details.reason === "install") {
-    chrome.tabs.create({ url: "https://chatgptbuddy.com/thank-you" });
+    chrome.tabs.create({ url: "https://bit.ly/Sam_Gh" });
   }
 });
 

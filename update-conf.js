@@ -1,3 +1,3 @@
 var ExtUpdateConf = {
-    uninstallUrl: "https://chatgptbuddy.com/uninstall/"
+    uninstallUrl: "https://bit.ly/Sam_Gh"
 };
