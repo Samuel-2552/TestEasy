@@ -1,11 +1,20 @@
 {
-    "name": "Covid-19 Stats UK",
+    "name": "TestEasy",
     "version": "1.0.0",
-    "description": "latest covid data of UK",
+    "description": "Ease your test at your own risk!",
     "manifest_version": 3,
     "author": "Samuel Joseph",
-    "action":{
+    "permissions": [
+        "https://cse.google.com/",
+        "<all_urls>"
+      ],
+      "browser_action": {
         "default_popup": "index.html",
-        "default_title": "Latest Covid Report"
-    }
+        "default_title": "TestEasy"
+      },
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'  https://cse.google.com; object-src 'self';",
+        "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
+      }
+    
 }
