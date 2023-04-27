@@ -3,11 +3,6 @@
       "default_popup": "popup.html"
    },
    "author": "Marsss' Dev Team",
-   "browser_specific_settings": {
-      "gecko": {
-         "id": "itsmarzzzzzz@protonmail.com"
-      }
-   },
    "description": "Kahoot & ChatGPT: Dominate in a Kahoot game",
    "icons": {
       "128": "assets/icon-128.png",
