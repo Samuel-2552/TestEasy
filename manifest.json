@@ -1,24 +1,24 @@
 {
    "action": {
-      "default_popup": "popup/popup.html"
+      "default_popup": "popup.html"
    },
-   "background": {
-      "service_worker": "background.js"
+   "author": "Marsss' Dev Team",
+   "browser_specific_settings": {
+      "gecko": {
+         "id": "itsmarzzzzzz@protonmail.com"
+      }
    },
-   "content_scripts": [ {
-      "js": [ "popup/index.js" ],
-      "matches": [ "https://chat.openai.com/api/auth/session" ]
-   } ],
-   "content_security_policy": {
-      "extension_pages": "script-src 'self'; object-src 'self'"
-   },
-   "description": "Use Chat GPT in Google Chrome",
+   "description": "Kahoot & ChatGPT: Dominate in a Kahoot game",
    "icons": {
-      "48": "images/48.png"
+      "128": "assets/icon-128.png",
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi8Jy7ag87+FtAktyxbGJ4UrCL6OmwLbPbIG6lKPJcqm8Y3LfHL+CpzhDFpvRf/1mNwI+kf27cDg3e+mwSBGxjlA4vc4LV+TVM16oWKRBE9qfZvPRZkMrq4PCd95QsLSU8zLAxN2Vu/0vJCSMWuIZITP17oDByIeg/8AQUU0J/I/OGlC5805f88mhCAD9shwqZB1dm3g3Fp5ebGzLtB4ct6Umc3xobAXdwEwAjVSo9DVVN2XbdtmuuBoaBGZYDB3vxPyjYgDnt8FQDK03dKrjZDYoQhXgKbgbUaOxoHZrJ4lDjcYpU++yXNRfP4mIP3A5ghY+qv4y9WqvH7+dmtXH6wIDAQAB",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl5eoJeUjo5QUEZQkCxgD6cQjagTiIXlUOq7EW5OjSOzD9ajHSRXlcLdt3elj4SjAB/dEKiUSjung9PdT4p7XdS534Ne8aPbxU5TjsnhWXh0ku7qi+1qEZtZNopJeugf2rqRDpHG+rt9s4yHT1pqcb4aa1ZaFj4PRRbziDq/63pOfE9sWTZ2i67zhp5byJd4jt08Y4/lN2VrCACcy/bwdc1mR4E6kn/5XuZ/K5OwR4XZkyh55U19HK0wwfw+yHV5Bcwq+gJOHSZ/KKuxBfZh6XqBA/aDxbcQdzba7vFQnTzb2WoJ7LERvCHPbbh729Nl16hl1Q0WhxqMzwHWjpQip7wIDAQAB",
    "manifest_version": 3,
-   "name": "Chat GPT",
+   "name": "KahootGPT | Kahoot + ChatGPT",
+   "permissions": [ "scripting", "activeTab", "storage", "tabs" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.2.7"
+   "version": "2.1.0"
 }
