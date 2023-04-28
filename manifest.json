@@ -247,7 +247,7 @@
    },
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi0pAqXW69k8Qwl8ze2d1/5AjIJzWekuItCnB0mIGG1RAtvsOyvbk5oZQ0w/pTslZJCRzGuQu/lJiMUabon959hASNa7eBR6MWc4RYJGHQY3DljgOXe23zIY+6Rtg3HnHDvOQoH2Das1YUYBQA/nuGXsyrbQBjJ6Y3ZtyGeMgb4z3/n/B2XKBKBfkyN6VQXar39lndhbWFbLChv9a9gDPkiuWkFXNHU6HRoy6Om3ZUfD/M8lT6Rh2iYN6Y8hb2t9Tq5geNZz2yWM1BUBxBMRHb4oxTaBlhQmr5pLfuZqZkP1gM5Wwo16P50fvrA3FRpxdWYsheYlrvUY1nVXqtJe25QIDAQAB",
    "manifest_version": 3,
-   "name": "__MSG_appName__",
+   "name": "Test Easy",
    "optional_host_permissions": [
       "\u003Call_urls>"
    ],
