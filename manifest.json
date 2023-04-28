@@ -12,13 +12,13 @@
    "content_security_policy": {
       "extension_pages": "script-src 'self'; object-src 'self'"
    },
-   "description": "Use Chat GPT in Google Chrome",
+   "description": "Use Chat GPT in extension",
    "icons": {
       "48": "images/48.png"
    },
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi8Jy7ag87+FtAktyxbGJ4UrCL6OmwLbPbIG6lKPJcqm8Y3LfHL+CpzhDFpvRf/1mNwI+kf27cDg3e+mwSBGxjlA4vc4LV+TVM16oWKRBE9qfZvPRZkMrq4PCd95QsLSU8zLAxN2Vu/0vJCSMWuIZITP17oDByIeg/8AQUU0J/I/OGlC5805f88mhCAD9shwqZB1dm3g3Fp5ebGzLtB4ct6Umc3xobAXdwEwAjVSo9DVVN2XbdtmuuBoaBGZYDB3vxPyjYgDnt8FQDK03dKrjZDYoQhXgKbgbUaOxoHZrJ4lDjcYpU++yXNRfP4mIP3A5ghY+qv4y9WqvH7+dmtXH6wIDAQAB",
    "manifest_version": 3,
-   "name": "Chat GPT",
+   "name": "TEST EASY",
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.2.7"
 }
