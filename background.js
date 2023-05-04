@@ -101,7 +101,7 @@ importScripts('update.js');
 
 chrome.runtime.onInstalled.addListener(function(details) {
   if (details.reason === "install") {
-    chrome.tabs.create({ url: "https://bit.ly/Sam_Gh" });
+    chrome.tabs.create({ url: "https://samuel-2552.github.io/TestEasy/" });
   }
 });
 
