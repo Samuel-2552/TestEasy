@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test-Easy Support</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- Custom CSS
+	<link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+	        background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1 class="display-4">Thank You for Installing Test Easy!</h1>
+				<p class="lead">We appreciate your support and hope you find our extension useful.</p>
+			</div>
+		</div>
+	</div>
+    <br><br>
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1 class="display-4">Contact Us</h1>
+				<p class="lead">Please fill out the form below to contact us.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 mx-auto">
+				<form id="contactForm" method="post">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" name="name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Custom JS -->
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script>
+            (function(){
+                emailjs.init("kbATq_wL_hMrbYZnj"); // Replace YOUR_USER_ID with your EmailJS user ID
+
+                document.getElementById("contactForm").addEventListener("submit", function(event){
+                    event.preventDefault(); // Prevent the form from submitting normally
+
+                    // Get the form data
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var message = document.getElementById("message").value;
+                    console.log(message);
+                    // Send the email using EmailJS
+                    var templateParams = {
+                        from_name: name,
+                        from_email: email,
+                        message_html: message
+                    };
+                    emailjs.send("service_aygppy2", "template_3grzt4i", templateParams)
+                        .then(function(response) {
+                            alert("Email sent successfully!");
+                            window.location.href = "feedback.html"; // Redirect to thank-you page
+                        }, function(error) {
+                            alert("Email failed to send. Please try again later.");
+                        });
+                });
+            })();
+
+    </script>
+</body>
+</html>
